@@ -1,0 +1,8 @@
+kwh = float(input("enter your kmh consuption: "))
+
+if kwh <= 200:
+    electricbill = kwh * 13
+    print("total electric bill ", electricbill)
+else:
+    electricbill = kwh * 16
+    print("total electric bill ", electricbill)
