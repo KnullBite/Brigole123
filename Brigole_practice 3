@@ -1,0 +1,26 @@
+print("press 1: balance inquiry")
+print("press 2: withdrawal")
+print("press 3: deposit")
+choice = int(input("choose a number to press: "))
+
+initial = 1000
+
+if choice == 1:
+
+    print("balance inquiry " ,initial)
+
+elif choice == 2:
+    withdrawal = int(input("enter the amount : "))
+    if withdrawal < initial & withdrawal % 100 == 0:
+        currentbalance = initial - withdrawal
+        print("\n============withdrawal transaction=============")
+        print("amount: ", withdrawal)
+        print("balance: ", currentbalance)
+        print("THANKYOU FOR TRUSTING INDIAN BANK")
+    else:
+        print("inavalid!")
+elif choice == 3:
+    deposit = float(input("enter the amount: "))
+    print("balance: ", deposit + initial)
+else:
+    print("INVALID CHOICE")
