@@ -24,4 +24,4 @@ match Brigole_size:
         Brigole_price = 450
 
 if Brigole_price >0:
-    print("Pizza Price: ",aying_price)
+    print("Pizza Price: ",Brigole_price)
