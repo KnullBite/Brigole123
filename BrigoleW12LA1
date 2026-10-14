@@ -1,0 +1,41 @@
+Brigole_Salary = {
+    "E104": {
+        "EmpName": "Brigole,glenn,ezra",
+        "DailyHrs": [8, 9, 8.5, 10, 8]
+    },
+    "E601": {
+        "EmpName": "Brigole,glenn,ezra",
+        "DailyHrs": [9, 10, 8, 8, 9]
+    }
+}
+print("-------------------------------")
+  Brigole_EmployeeID = input("Enter Employee ID: ")
+
+if  Brigole_EmployeeID in   Brigole_Salary:
+  Brigole_Employee =   Brigole_Salary[Aying_EmployeeID]
+
+  Brigole_WeeklyBasic = 900
+    Brigole_RatePerHour =  Brigole_WeeklyBasic / 40
+  Brigole_totalWeeklyhours = sum(  Brigole_Employee["DailyHrs"])
+
+  Brigole_OvertimeHours = 0
+
+    for DutyHours in  Brigole_Employee["DailyHrs"]:
+        if DutyHours > 8:
+              Brigole_OvertimeHours += DutyHours - 8
+
+  Brigole_overtime =   Brigole_OvertimeHours * 1.5 *   Brigole_RatePerHour
+  Brigole_GrossPay = (40 *  Brigole_RatePerHour) +  Brigole_overtime
+
+    print("-------------------------------")
+    print("Employee Name:",  Brigole_Employee["EmpName"])
+    print("Daily Hours:",   Brigole_Employee["DailyHrs"])
+    print("Weekly Basic:",   Brigole_WeeklyBasic)
+    print("Rate per Hour:",  Brigole_RatePerHour)
+    print("Total Weekly Hours:",   Brigole_totalWeeklyhours)
+    print("Overtime Hours:",  Brigole_OvertimeHours)
+    print("Overtime:",  Brigole_overtime)
+    print("Gross Pay:",  Brigole_GrossPay)
+    print("-------------------------------")
+else:
+    print("Not found")
