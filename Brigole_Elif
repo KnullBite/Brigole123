@@ -1,0 +1,38 @@
+print("===== Grade Classifier ===== ".title())
+Brigole_Name = input("Input your name: ")
+Brigole_Items = int(input("Total items: "))
+Brigole_Score = int(input("Total scores: "))
+
+Brigole_Totalpercentage = Brigole_Score / Brigole_Items *100
+print(Brigole_Totalpercentage)
+if Brigole_Totalpercentage <= 59:
+    print("Remarks: Failed")
+elif Brigole_Totalpercentage >= 60 and Brigole_Totalpercentage <= 69:
+    print("Remarks: Passed")
+elif Brigole_Totalpercentage >= 70 and Brigole_Totalpercentage <= 79:
+    print("Remarks: Passed")
+elif Brigole_Totalpercentage >= 80 and Brigole_Totalpercentage <= 89:
+    print("Remarks: Passed")
+elif Brigole_Totalpercentage >= 90 and Brigole_Totalpercentage <= 99:
+    print("Remarks: Passed")
+else:
+    print("invalid")
+
+if Brigole_Totalpercentage <= 59:
+        gprint("Colors: red")
+elif Brigole_Totalpercentage >= 60 and Brigole_Totalpercentage <= 69:
+        print("Colors: orange")
+elif Brigole_Totalpercentage >= 70 and Brigole_Totalpercentage <= 79:
+        print("Colors: Yellow")
+elif Brigole_Totalpercentage >= 80 and Brigole_Totalpercentage <= 89:
+        print("Colors: Yellow Green")
+elif Brigole_Totalpercentage >= 90 and Brigole_Totalpercentage <= 99:
+        print("Colors: Light Green")
+else:
+       print("invalid")
+
+print("\n==== Grade Result ====")
+print(f"NAME: {Brigole_Name}")
+print(f"ITEMS: {Brigole_Items}")
+print(f"SCORE: {Brigole_Score}")
+print(f"TOTAL PERCENTAGE: {Brigole_Totalpercentage}")\
