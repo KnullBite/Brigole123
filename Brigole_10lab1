@@ -12,16 +12,21 @@ match Brigole_flavor:
     case "oreo":
         print("You selected Oreo Pizza.")
     case _:
-        print("Invalid Pizza Flavor
-Brigole_size = input("Enter size (Small/Meduim/Large): ").lower()
+        print("Invalid Pizza Flavor")
+
+Brigole_size = input("Enter size (Small/Medium/Large): ").lower()
+
+Brigole_price = 0
 
 match Brigole_size:
     case "small":
         Brigole_price = 250
-    case "meduim":
+    case "medium":
         Brigole_price = 350
     case "large":
         Brigole_price = 450
+    case _:
+        print("Invalid Pizza Size")
 
-if Brigole_price >0:
-    print("Pizza Price: ",Brigole_price)
+if Brigole_price > 0:
+    print("Pizza Price:", Brigole_price)
